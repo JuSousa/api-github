@@ -1,0 +1,133 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: calc(100vh - 59px);
+}
+
+.main-header {
+    background-color: #222;
+    color: #fff;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.main-header h1 {
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+}
+
+.main-header a {
+    color: white;
+    text-decoration: none;
+}
+
+form, .search-page, .user-page{
+    width: 100%;
+}
+
+.main-content {
+    padding: 0.5rem;
+}
+
+.search-page {
+    text-align: center;
+}
+
+.search-page__input,
+.search-page__button {
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    background-color: #dcdcdc;
+    padding: 15px 20px;
+    width: 30%;
+    color: #929292;
+    outline: none !important;
+    box-shadow: none;
+    transition: 0.5s all ease;
+}
+.search-page__input:focus{
+    border: 1px solid #a5a5a5;
+}
+
+.search-page__button {
+    width: 15%;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #929292;
+}
+
+.search-page__button:hover{
+    background-color: #43a8ff;        
+}
+
+.user-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-info__avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+    float: left;
+}
+
+.user-info__text {
+    text-decoration: none;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.user-info__title {
+    font-size: 20px;
+}
+
+.user-info__title, .user-info__bio {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    color: #929292;
+}
+
+.user-info__stats {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+    display: flex;
+}
+
+.user-info__stats a {
+    color: #929292;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.user-info__stat {
+    flex: 1;
+}
+
+.user-info__stat p {
+    margin: 0;
+    white-space: nowrap;
+}
